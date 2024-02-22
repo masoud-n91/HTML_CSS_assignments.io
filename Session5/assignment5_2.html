@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <style>
+            #center{
+                /* border-style: solid; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h1{
+                /* border-style: solid; */
+                font-size: 100;
+                font-family: "Trirong", serif;
+                position: relative;
+                top: 60px;
+            }
+
+            #g1{
+                /* left: 200; */
+                color: #4285F4;
+            }
+            
+            #o1{
+                /* left: 320; */
+                color: #DB4437;
+            }
+            
+            #o2{
+                /* left: 400; */
+                color: #F4B400;
+            }
+            
+            #g2{
+                /* left: 480; */
+                color: #4285F4;
+            }
+            
+            #l{
+                /* left: 560; */
+                color: #0F9D58;
+            }
+            
+            #e{
+                /* left: 605; */
+                color: #DB4437;
+            }
+
+            form{
+                /* border-style: solid; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            input{
+                border-style: solid;
+                border-radius: 50px;
+                height: 40px;
+                width: 700px;
+                padding-left: 40px;
+                padding-right: 40px;
+                background-color: white;
+
+                background-image:url("Images/search.png");
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding-left: 40px;
+                background-size: 20px;
+            }
+
+            #search{
+                width: 20px;
+                position: relative;
+                left: 30px;
+                top: -6px;
+            }
+
+            #top{
+                text-align: right;
+                position: relative;
+                /* background-color: red; */
+            }
+
+            a{
+                margin-right: 10px;
+                font-size: 13px;
+                font-family: Arial, sans-serif;
+                color: black;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+
+            #dots{
+                width: 20px;
+                position: relative;
+                top: 7px;
+            }
+
+            #sign{
+                font-family: "Trirong", serif;
+                background-color: #4285F4;
+                border-style: none;
+                border-radius: 5px;
+                padding-left: 15px;
+                height: 30px;
+            }
+
+            #lucky{
+                margin-left: 10;
+            }
+
+            #buttons{
+                height: 30;
+                /* border-style: solid; */
+            }
+
+            #bottom_div{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                /* border-style: solid; */
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #b_left{
+                /* border-style: solid; */
+                text-align: left;
+                height: 30px;
+                width: 300px;
+                margin-left: 10px;
+            }
+
+            #b_right{
+                /* border-style: solid; */
+                text-align: right;
+                height: 30px;
+                width: 300px;
+                margin-right: 10px;
+            }
+
+            #mic{
+                height: 25px;
+                position: relative;
+                top: -8px;
+                left: -30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+            <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+            <a href="https://www.google.fr/intl/en/about/products"><img src="Images/dots.png" id="dots"></a>
+            <button id="sign"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></button>
+        </div>
+        <div id="center">
+            <h1 id="g1">G</h1>
+            <h1 id="o1">o</h1>
+            <h1 id="o2">o</h1>
+            <h1 id="g2">g</h1>
+            <h1 id="l">l</h1>
+            <h1 id="e">e</h1>
+        </div>
+        <div id="center">
+            <!-- <img src="Images/search.png" id="search"> -->
+            <form>
+                <input type="text">
+            </form>
+            <a href="voice_search.html"><img src="Images/microphone.png" id="mic"></a>
+        </div>
+        <div id="buttons">
+            <form>
+                <button id="google_s">Google search</button>
+                <button id="lucky">I'm feeling lucky</button>
+            </form>
+        </div>
+
+        <div id="bottom_div">
+            <div id="b_left">
+                <form>
+                    <a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                    <a href="https://www.google.com/intl/en_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                    <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+                </form>
+            </div>
+            <div id="b_right">
+                <a href="https://policies.google.com/privacy?hl=en-FR&fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Terms</a>
+                <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Settings</a>
+            </div>
+        </div>
+
+    </body>
+</html>
