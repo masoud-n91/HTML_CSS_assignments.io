@@ -1,0 +1,97 @@
+h1{
+    text-align: center;
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-left: 50%;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart::after {
+    left: -50px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+
+#Menu{
+    margin-top: 50px;
+}
+
+#Menu li{
+    float: left;
+    list-style-type: none;
+}
+
+#Menu a{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 20;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    display: block;
+    text-align: center;
+}
+
+#leftList{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#rightList {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right-style: none;
+}
+
+#Menu a:hover{
+    background-color: rgb(26, 23, 23);
+}
+
+i, #linkText{
+    display: block;
+    text-align: center;
+}
+
+#linkText {
+    margin-top: 5px;
+}
+
+#menu .subMenu li{
+    float: none;
+    display: none;
+}
+
+#menu .subMenu{
+    padding-left: 0px;
+}
+
+#menu li:hover .subMenu li{
+    display: block;
+}
+
+#menu li:hover{
+    margin: 5px;
+}
+
+#menu a:hover{
+    border-radius: 5px;
+}
+
