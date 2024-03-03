@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    transition: tramsform 3s;
+}
+
+#backgroundImg{
+    position: relative;
+    width: 100%;
+}
+
+#topDiv {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(65, 65, 65);
+}
+
+#topList{
+    padding-left: 0px;
+}
+
+#topList li{
+    list-style-type: none;
+    float: left;
+    margin: 15px;
+}
+
+#topList a {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+}
+
+i, #linkText {
+    display: block;
+    text-align: center;
+}
+
+#searchBtn{
+    color: #ffffff;
+    position: absolute;
+    margin-top: 15px;
+    right: 30px;
+}
+
+#searchInput{
+    width: 0px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    margin-left: 10px;
+    transition: width 2s, background-color 2s;
+}
+
+#searchBtn:hover #searchInput{
+    background-color: white;
+    width: 200px;
+}
+
+#linkText {
+    margin-top: 5px;
+}
+
+#teamDiv{
+    position: relative;
+    text-align: center;
+}
+
+h3{
+    position: relative;
+}
+
+#individualDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.individuals{
+    margin: 30px;
+}
+
+.individuals img{
+    height: 100px;
+    border-radius: 100%;
+}
+
+#workDiv{
+    position: relative;
+    display: flex;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 550px;
+}
+
+.workPresentation{
+    margin: 20px;
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.workPresentation:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+#workTextDiv {
+    margin: 20px;
+    width: 20%;
+    overflow: hidden;
+}
+
+#workText{
+    color: white;
+}
+
+.workPresentation img{
+    width: 100%;
+}
+
+.workPresentation ul{
+    padding: 0px;
+    margin: 10;
+}
+
+.workPresentation ul li{
+    margin: 5px;
+    list-style-type: none;
+}
+
+#plusBtn{
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(0, 156, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricingText h3, #pricingText h4{
+    text-align: center;
+}
+
+#pricingDiv{
+    display: flex;
+}
+
+.priceTags{
+    width: 30%;
+    height: 510px;
+    border-style: solid;
+    border-color: rgb(206, 206, 206);
+    border-width: 1px;
+    /* background-color: blue; */
+    margin: 20px;
+}
+
+.blackH1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30;
+    margin: 0px;
+}
+
+#grayH1 {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    text-align: center;
+    padding: 30;
+    margin: 0px;
+}
+
+.priceList{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.priceList li{
+    padding: 0;
+    padding: 20;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(206, 206, 206);
+}
+
+.priceTags {
+    position: relative;
+    text-align: center;
+}
+
+.buttonDiv{
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    height: 100;
+    position: relative;
+}
+
+.buttonDiv button{
+    position: absolute;
+    bottom: 30;
+    right: 30%;
+    left: 30%;
+    background-color: rgb(0, 156, 138);
+    padding: 10;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.buttonDiv button:hover{
+    box-shadow: 0px 0px 10px hotpink;
+    text-shadow: 0px 0px 10px black;
+}
+
+#topContactDiv{
+    display: flex;
+    background-color: rgb(206, 206, 206);
+}
+
+#topContactDiv h1{
+    display: inline-block;
+    border-bottom: solid;
+    border-bottom-color: rgb(0, 156, 138);
+    border-width: 5px;
+}
+
+#contactText{
+    width: 45%;
+    margin-left: 20px;
+}
+
+#formDiv{
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(28, 28, 28);
+    margin-top: 20px;
+    width: 45%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#formDiv input{
+    width: 100%;
+    border: none;
+    border-bottom-style: solid;
+    border-color: rgb(206, 206, 206);
+}
+
+#formDiv input:focus {
+    border: solid;
+}
+
+#checkbox_div {
+    position: relative;
+    margin-top: 20px;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#checkbox_div input[type = "checkbox"]{
+    position: absolute;
+    left: -30px;
+    width: 30px;
+}
+
+#checkbox_div button{
+    background-color: black;
+    color: white;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+#bottomImg{
+    width: 100%;
+}
+
+#lastDiv{
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+#lastDiv h3, #lastDiv h6{
+    color: white;
+}
+
+#bottomInline{
+    display: flex;
+    justify-content: center;
+}
+
+#squareIcon{
+    background-color: rgb(0, 156, 138);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+#goUp{
+    position: absolute;
+    right: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+#bottomInline a{
+    text-decoration: none;
+}
+
+#topList a:hover{
+    text-shadow: 0px 0px 10px pink;
+}
