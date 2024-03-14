@@ -154,19 +154,6 @@ h3{
     align-items: center;
 }
 
-@media only screen and (max-width: 1000px) {
-    .workPresentation, #workTextDiv{
-        width: 40%;
-    }  
-}
-
-@media only screen and (max-width: 600px) {
-
-    .workPresentation,
-    #workTextDiv {
-        width: 60%;
-    }
-}
 
 #pricingText h3, #pricingText h4{
     text-align: center;
@@ -186,20 +173,6 @@ h3{
     border-width: 1px;
     /* background-color: blue; */
     margin: 20px;
-}
-
-@media only screen and (max-width: 700px) {
-
-    .priceTags {
-        width: 40%;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-
-    .priceTags {
-        width: 50%;
-    }
 }
 
 .blackH1{
@@ -264,6 +237,8 @@ h3{
 #topContactDiv{
     display: flex;
     background-color: rgb(206, 206, 206);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #topContactDiv h1{
@@ -370,4 +345,52 @@ h3{
 
 #topList a:hover{
     text-shadow: 0px 0px 10px pink;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .workPresentation,
+    #workTextDiv {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .workPresentation,
+    #workTextDiv {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .priceTags {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .priceTags {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #contactText , #formDiv{
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #contactText,
+    #formDiv {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
